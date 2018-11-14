@@ -1,0 +1,22 @@
+<div class="banner-flat" style="background: url(<%= @flat.image %>) center no-repeat" >
+  <h1><%= @flat.name %></h1>
+</div>
+
+<div class="container">
+  <div class="desc-container">
+    <div class="desc-box">
+      <p><i class="fas fa-map-marker-alt"></i> <%= @flat.address %></p>
+      <p><%= @flat.description %></p>
+    </div>
+    <div class="desc-info">
+      <p><%= @flat.price_per_night %>€</p>
+      <p><i class="fas fa-user-friends"></i> <%= @flat.number_of_guests %></p>
+      <% if @flat.wifi %>
+        <p><i class="fas fa-wifi"></i></p>
+      <% end %>
+    </div>
+  </div>
+  <div class="show-button">
+    <%= link_to 'Home', flats_path, id:'btn' %>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.banner {
+  height: 300px;
+  background: linear-gradient(-165deg, rgba(168, 39, 0, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%), url("https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Feskipaper.com%2Fimages%2Fberlin-1.jpg&f=1") no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  h1 {
+    color: white;
+    margin: 0;
+  }
+}
+.button {
+  margin: 20px;
+}
+
+.banner-flat {
+  height: 300px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  h1 {
+    color: white;
+    text-shadow: 0px 0px 5px rgb(50,50,50);
+    margin: 0;
+  }
+}

@@ -1,0 +1,45 @@
+#flat_form {
+  .input {
+    color:rgb(50,50,50);
+    input {
+      height: 23px;
+    };
+    input, textarea {
+      width: 250px;
+      margin: 5px;
+      border: 1px solid #bfbfbf;
+      padding: 2px;
+      border-radius: 2px;
+      .string, .text {
+        font-family: 'Open Sans'
+      }
+    };
+    input#flat_name {
+      margin-left: 100px;
+    };
+    input#flat_address {
+      margin-left: 84px;
+    };
+    textarea#flat_description {
+      margin-left: 58px;
+    };
+    input#flat_price_per_night {
+      margin-left: 35px;
+    };
+    input#flat_number_of_guests {
+      margin-left: 10px;
+    };
+    input#flat_image {
+      margin-left: 97px;
+    };
+    input#flat_wifi {
+      width: 23px;
+      margin-left: -4.5px;
+    }
+  };
+  input {
+    font-size: 15px;
+    box-shadow: none;
+    font-family: 'Open Sans'
+  }
+}

@@ -1,0 +1,35 @@
+<div class="banner">
+  <div class="title">
+    <h1>Simple Airbnb</h1>
+  </div>
+  <div class="button">
+    <%= link_to 'Add a flat', new_flat_path, id:'btn' %>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="cards">
+
+      <% @flats.each do |flat| %>
+
+        <div class="card">
+          <div class="card-content" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= flat.image %>);">
+            <div class="card-category">
+              <%= flat.price_per_night %>€
+              <i class="fas fa-user-friends"></i> <%= flat.number_of_guests %>
+            </div>
+            <div class="card-description">
+              <h2><%= flat.name %></h2>
+              <p><%= flat.address %></p>
+            </div>
+          </div>
+          <div class="card-info">
+            <%= link_to 'More info', flat %>
+          </div>
+        </div>
+      <% end %>
+
+  </div>
+
+</div>
